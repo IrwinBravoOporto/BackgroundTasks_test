@@ -2,5 +2,5 @@
 
 ## やりたいこと
 - Open weather APIからXMLでデータ取得
-- XML Parserというライブラリ使えそう
+- XMLParser使えそう
 - Background Tasksを使ってバックグラウンドで更新処理
