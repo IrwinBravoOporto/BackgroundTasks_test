@@ -9,24 +9,24 @@ import UIKit
 import BackgroundTasks
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 //    確認
 //    e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.fetch.xml.weather.refresh"]
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("didFinishLaunchingWithOptions")
+//        print("didFinishLaunchingWithOptions")
 //        registerTask()
         return true
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("applicationDidEnterBackground")
+//        print("applicationDidEnterBackground")
 //        cancelAllPandingBGTask()
 //        scheduleAppRefresh()
     }
     
     func sceneDidEnterBackground(_ scene: UIScene) {
-        print("sceneDidEnterBackground")
+//        print("sceneDidEnterBackground")
 //        cancelAllPandingBGTask()
 //        scheduleAppRefresh()
     }
