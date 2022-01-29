@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         print("sceneDidBecomeActive")
         
+        
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -36,11 +37,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         print("sceneWillEnterForeground")
+        NotificationCenter.default.post(name: Notification.Name("NewFunctionName"), object: nil)
         
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
         print("sceneDidEnterBackground")
+//        NotificationCenter.default.post(name: Notification.Name("NewFunctionName"), object: nil)
         cancelAllPandingBGTask()
         scheduleAppRefresh()
     }
@@ -81,6 +84,7 @@ extension SceneDelegate {
         }
         
         task.setTaskCompleted(success: true)
+//        NotificationCenter.default.post(name: Notification.Name("NewFunctionName"), object: nil)
     }
     
     func cancelAllPandingBGTask() {
@@ -104,6 +108,7 @@ extension SceneDelegate {
                 print("User has declined notifications")
             }
         }
+//        NotificationCenter.default.post(name: Notification.Name("NewFunctionName"), object: nil)
     }
     
     func scheduleLocalNotification() {
@@ -114,6 +119,7 @@ extension SceneDelegate {
                 self.fireNotification()
             }
         }
+//        NotificationCenter.default.post(name: Notification.Name("NewFunctionName"), object: nil)
     }
     
     func fireNotification() {

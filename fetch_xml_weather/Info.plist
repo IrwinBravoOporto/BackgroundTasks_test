@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationExitsOnSuspend</key>
-	<false/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Our app uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
 		<string>com.fetch.xml.weather.refresh</string>
@@ -27,6 +27,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationExitsOnSuspend</key>
+	<false/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +52,15 @@
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>audio</string>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>external-accessory</string>
 		<string>fetch</string>
+		<string>location</string>
 		<string>processing</string>
+		<string>remote-notification</string>
+		<string>voip</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -74,5 +83,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Bluetooth access in required for wearable communication</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This is required for monitoring your Kwema and keep updated in case someone needs help</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This is required for monitoring your Kwema and keep updated in case someone needs help</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This is required for ranging your Kwema and keep updated in case someone needs help</string>
 </dict>
 </plist>
